@@ -3,15 +3,22 @@
 sudo pip install virtualenv 
 ```
 
-- Create and activate virtual environment
+- Create and activate virtual environment (using virtualenv)
 ```
 virtualenv venv -p python3.5
 source venv/bin/activate
 ```
 
-- Install all the requirements
+- Install all the requirements (only if you're using virtualenv)
 ```
 pip install -r requirements.txt
+```
+
+- Create and activate virtual environment (using conda)
+```
+conda env create --file local_env.yml
+conda activate A1
+conda deactivate
 ```
 
 - Perform sanity checks on `computeCoOccurrenceMatrix`, `distinctWords` and `reduceToKDim`
